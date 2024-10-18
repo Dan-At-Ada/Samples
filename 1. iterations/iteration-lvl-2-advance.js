@@ -4,8 +4,10 @@
 console.log("1. Advanced For Loop - Population growth simulation:");
 let population = 1000;
 const growthRate = 0.05; // 5% annual growth
-const years = 10;
-for (let year = 1, totalGrowth = 0; year <= years; year++) {
+const years = 10; // Why do we use a constant here?
+let totalGrowth = 0;
+// for (let year = 1, totalGrowth = 0; year <= years; year++) 
+for (let year = 1; year <= years; year++) {
   const yearlyGrowth = population * growthRate;
   population += yearlyGrowth;
   totalGrowth += yearlyGrowth;
