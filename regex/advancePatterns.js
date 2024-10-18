@@ -42,3 +42,11 @@ const serialNumberPattern = /^[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/;
 console.log("Serial Number Pattern:");
 console.log(`Testing "${testSerialNumberCorrect}": ${serialNumberPattern.test(testSerialNumberCorrect)}`); // true
 console.log(`Testing "${testSerialNumberIncorrect}": ${serialNumberPattern.test(testSerialNumberIncorrect)}`); // false
+
+
+
+let pc = "NW147GW";
+
+let pcRegex = /^([A-Z0-9]+)([0-9])([A-Z]+)/
+let pcMatch = pc.match(pcRegex);
+console.log(pcMatch);
